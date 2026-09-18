@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions – Gondal Infra</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Page Banner ── */
+        .page-banner {
+            position: relative;
+            width: 100%;
+            padding: 120px 80px 60px;
+            background: #1a1a1a;
+            overflow: hidden;
+        }
+
+        .page-banner::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 100%; height: 4px;
+            background: linear-gradient(90deg, #c9a84c, #e8c96e, #c9a84c);
+        }
+
+        .page-banner h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 52px;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .page-banner .breadcrumb {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .page-banner .breadcrumb a {
+            color: #c9a84c;
+            text-decoration: none;
+        }
+
+        /* ── Content Area ── */
+        .legal-section {
+            max-width: 900px;
+            margin: 60px auto 80px;
+            padding: 0 30px;
+        }
+
+        .legal-section h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 36px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 30px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #c9a84c;
+        }
+
+        .legal-section p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            line-height: 1.9;
+            color: #444;
+            margin-bottom: 22px;
+        }
+
+        .legal-section p strong {
+            color: #1a1a1a;
+        }
+
+        /* ── Navbar override for inner pages ── */
+        .navbar-inner {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 80px;
+            background: transparent;
+        }
+
+        .navbar-inner nav ul {
+            display: flex;
+            list-style: none;
+            gap: 50px;
+        }
+
+        .navbar-inner nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .navbar-inner nav ul li a:hover {
+            color: #c9a84c;
+        }
+
+        .navbar-inner .login-btn {
+            text-decoration: none;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 500;
+        }
+
+        .navbar-inner .login-btn:hover {
+            background: #c9a84c;
+            border-color: #c9a84c;
+        }
+
+        /* ── Footer ── */
+        .footer {
+            position: relative;
+            background: #111;
+            padding: 60px 80px 30px;
+            color: #ccc;
+        }
+
+        .footer .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            height: 70px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            width: 38px; height: 38px;
+            border-radius: 50%;
+            border: 1px solid #555;
+            display: flex; align-items: center; justify-content: center;
+            color: #ccc;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-icons a:hover {
+            background: #c9a84c;
+            border-color: #c9a84c;
+            color: #fff;
+        }
+
+        .footer h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer ul li a:hover {
+            color: #c9a84c;
+        }
+
+        .footer p {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #aaa;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0;
+            margin-top: 15px;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 10px 15px;
+            background: #222;
+            border: 1px solid #444;
+            border-right: none;
+            color: #fff;
+            font-size: 13px;
+            outline: none;
+        }
+
+        .newsletter-form button {
+            padding: 10px 18px;
+            background: #c9a84c;
+            border: none;
+            color: #fff;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 13px;
+            color: #555;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .page-banner {
+                padding: 100px 25px 50px;
+            }
+
+            .page-banner h1 {
+                font-size: 34px;
+            }
+
+            .legal-section {
+                padding: 0 20px;
+                margin: 40px auto 60px;
+            }
+
+            .legal-section h2 {
+                font-size: 26px;
+            }
+
+            .navbar-inner {
+                padding: 20px 25px;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .navbar-inner nav ul {
+                gap: 20px;
+            }
+
+            .footer {
+                padding: 40px 25px 20px;
+            }
+
+            .footer .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Banner with Navbar -->
+    <div class="page-banner">
+
+        <nav class="navbar-inner">
+            <div class="logo">
+                <img src="images/transparent%20logo.png" alt="Gondal Infra" style="height:70px;">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#about">Company</a></li>
+                    <li><a href="index.html#news">Blogs &amp; News</a></li>
+                    <li><a href="index.html#enquiry">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="login-btn">Login</a>
+        </nav>
+
+        <h1>Terms &amp; Conditions</h1>
+        <p class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Terms &amp; Conditions</p>
+
+    </div>
+
+    <!-- Content -->
+    <section class="legal-section">
+
+        <h2>Terms &amp; Conditions</h2>
+
+        <p>
+            <strong>GONDAL INFRA PRIVATE LIMITED</strong> website is created, updated and maintained
+            independently by <strong>GONDAL INFRA PRIVATE LIMITED</strong>. All content on this site
+            is the copyright of <strong>GONDAL INFRA PRIVATE LIMITED</strong>.
+        </p>
+
+        <p>
+            The information contained in this Web site is intended, solely to provide general
+            information for the personal use of the reader, who accepts full responsibility for its
+            use. <strong>GONDAL INFRA PRIVATE LIMITED</strong> does not represent or endorse the
+            accuracy or reliability of any information, including content or advertisements
+            (collectively, the "materials") contained on, distributed through, or linked, downloaded
+            or accessed from any of the services contained on this web site, or the quality of any
+            products, information or other materials displayed, or obtained by you as a result of an
+            advertisement or any other information or offer in or in connection with the service.
+        </p>
+
+        <p>
+            We accept no responsibility for any errors or omissions, or for the results obtained from
+            the use of this information. All information in this site is provided "as is," with no
+            guarantee of completeness, accuracy, timeliness or of the results obtained from the use
+            of this information, and without warranty of any kind, express or implied, including, but
+            not limited to warranties of performance, merchantability and fitness for a particular
+            purpose. Nothing herein shall to any extent substitute for the independent investigations
+            and the sound technical and business judgment of the reader.
+        </p>
+
+        <p>
+            In no event shall <strong>GONDAL INFRA PRIVATE LIMITED</strong> be liable for any direct,
+            indirect, incidental, punitive, or consequential damages of any kind whatsoever with
+            respect to the service, the materials and the products. Users of this site must hereby
+            acknowledge that any reliance upon any materials shall be at their sole risk.
+        </p>
+
+        <p>
+            The information presented here has been compiled from publicly aired and published
+            sources. <strong>GONDAL INFRA PRIVATE LIMITED</strong> respects these sources and is in
+            no way trying to infringe on the respective copyrights or businesses of these entities.
+        </p>
+
+        <p>
+            <strong>GONDAL INFRA PRIVATE LIMITED</strong> reserves the right, in their sole
+            discretion and without any obligation, to make improvements to, or correct any error or
+            omissions in any portion of the service or the materials. The information contained
+            herein can be used for re-publishing and distribution only by taking written permission
+            from <strong>GONDAL INFRA PRIVATE LIMITED</strong>.
+        </p>
+
+        <p>
+            "By agreeing to our terms and conditions the users acknowledge that he/she may receive
+            instant messages, files, photos, videos through SMS/WhatsApp or RCS messaging service."
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-col logo-col">
+                <img src="images/transparent%20logo.png" alt="Gondal Infra" class="footer-logo">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61591282770246" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/gondal_infra/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gondal-infra-35128b419/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#enquiry">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>CONTACT INFORMATION</h3>
+                <p>✉ sales@gondalinfra.com</p>
+                <p>📞 9999-93-5454</p>
+                <p>Thathaula, Uttarakhand</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>JOIN OUR NEWSLETTER</h3>
+                <p class="newsletter-text">Subscribe to get the latest updates on new listings.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 GONDAL INFRA PRIVATE LIMITED. All Rights Reserved.
+        </div>
+
+    </footer>
+
+</body>
+</html>
