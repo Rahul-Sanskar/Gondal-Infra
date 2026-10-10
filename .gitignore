@@ -1,0 +1,23 @@
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies (if any composer packages are installed locally)
+/vendor/
+
+# Local env / secrets
+.env
+.env.*
