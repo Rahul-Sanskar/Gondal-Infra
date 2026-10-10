@@ -2,7 +2,7 @@
 declare(strict_types=1);
 session_start();
 // Configure SMTP in environment variables on your hosting panel. Do not put SMTP credentials in public files.
-$recipient = 'saleshead@gondalinfra.com';
+$recipient = 'rahulsanskar07@gmail.com;
 function back(string $status): never { header('Location: index.html?' . $status . '=1#enquire'); exit; }
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { http_response_code(405); exit('Method not allowed'); }
 if (!empty($_POST['website'] ?? '')) { back('sent'); } // honeypot
