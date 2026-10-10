@@ -11,13 +11,19 @@ Desktop.ini
 *.swo
 *~
 
-# Logs
+# Logs / runtime data
+logs/
 *.log
 npm-debug.log*
 
 # Dependencies (if any composer packages are installed locally)
 /vendor/
+composer.lock
 
 # Local env / secrets
 .env
 .env.*
+
+# PHP dev
+.phpunit.result.cache
+.php-cs-fixer.cache
