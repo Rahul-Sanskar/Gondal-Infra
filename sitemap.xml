@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://www.gondalinfra.com/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.gondalinfra.com/assets/hero-gate.jpg</image:loc>
+      <image:title>Hero Industrial Park 3 – Entrance Gate, Roorkee Haridwar</image:title>
+      <image:caption>Entrance gate of Hero Industrial Park Phase 3 – RERA & SIDA Approved Industrial Plots in Roorkee, Haridwar by Gondal Infra</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gondalinfra.com/assets/site-work-01.jpg</image:loc>
+      <image:title>Industrial Plot Site Development – Hero Industrial Park 3, Roorkee</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gondalinfra.com/assets/site-work-03.jpg</image:loc>
+      <image:title>Ground Preparation – Industrial Plots Roorkee Haridwar</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gondalinfra.com/assets/site-work-05.jpg</image:loc>
+      <image:title>On-Site Construction – Hero Industrial Park 3</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gondalinfra.com/assets/site-work-07.jpg</image:loc>
+      <image:title>Land Levelling – Industrial Park Roorkee Haridwar</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gondalinfra.com/assets/site-work-10.jpg</image:loc>
+      <image:title>Infrastructure Preparation – Hero Industrial Park Phase 3</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.gondalinfra.com/assets/site-work-12.jpg</image:loc>
+      <image:title>Site Materials – Industrial Development Roorkee</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.gondalinfra.com/terms.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gondalinfra.com/privacy.html</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

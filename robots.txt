@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /logs/
+Disallow: /vendor/
+Disallow: /contact.php
+
+Sitemap: https://www.gondalinfra.com/sitemap.xml
