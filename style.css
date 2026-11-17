@@ -704,11 +704,11 @@ h1 {
   width: fit-content;
 }
 .location-qr-img {
-  width: 108px;
-  height: 108px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   background: #fff;
-  padding: 6px;
+  padding: 5px;
   flex-shrink: 0;
 }
 .qr-info { display: flex; flex-direction: column; gap: 8px; justify-content: center; }
