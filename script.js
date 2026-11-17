@@ -1,12 +1,11 @@
-/* ═══════════════════════════════════════════
+/* ═══════════════════════════════════════
    Gondal Infra — Hero Industrial Park 3
-   script.js v3
-═══════════════════════════════════════════ */
+   script.js v4
+═══════════════════════════════════════ */
 
 // ── Nav toggle ──
 const menu   = document.getElementById('menu');
 const nav    = document.getElementById('nav');
-const header = document.getElementById('site-header');
 
 menu.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
@@ -19,43 +18,8 @@ nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   menu.textContent = '☰';
 }));
 
-// ── Header shadow on scroll ──
-window.addEventListener('scroll', () => {
-  header.classList.toggle('scrolled', window.scrollY > 40);
-}, { passive: true });
-
-// ── Active nav link on scroll ──
-const sections = document.querySelectorAll('section[id]');
-const navLinks = nav.querySelectorAll('a[href^="#"]');
-
-const activateLink = () => {
-  let current = '';
-  sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 120) current = s.id;
-  });
-  navLinks.forEach(a => {
-    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-  });
-};
-window.addEventListener('scroll', activateLink, { passive: true });
-
 // ── Footer year ──
 document.getElementById('year').textContent = new Date().getFullYear();
-
-// ── Scroll reveal ──
-const revealEls = document.querySelectorAll('.reveal');
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      // Stagger siblings within the same parent
-      const siblings = Array.from(entry.target.parentElement.querySelectorAll('.reveal:not(.visible)'));
-      const delay = siblings.indexOf(entry.target) * 80;
-      setTimeout(() => entry.target.classList.add('visible'), delay);
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-revealEls.forEach(el => revealObserver.observe(el));
 
 // ── Lightbox ──
 const lightbox    = document.getElementById('lightbox');
@@ -81,11 +45,11 @@ document.getElementById('close-lightbox').addEventListener('click', closeLightbo
 lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
-// ── FAQ toggle icon sync (details/summary) ──
+// ── FAQ toggle icon ──
 document.querySelectorAll('.faq-item').forEach(item => {
   item.addEventListener('toggle', () => {
-    const toggle = item.querySelector('.faq-toggle');
-    if (toggle) toggle.textContent = item.open ? '−' : '+';
+    const t = item.querySelector('.faq-toggle');
+    if (t) t.textContent = item.open ? '−' : '+';
   });
 });
 
@@ -98,8 +62,7 @@ const siteImages = [
   'assets/site-work-13.jpg','assets/site-work-14.jpg','assets/site-work-15.jpg',
   'assets/site-work-16.jpg',
 ];
-
-function triggerImageDownloads() {
+function triggerDownloads() {
   siteImages.forEach((src, i) => {
     setTimeout(() => {
       const a = document.createElement('a');
@@ -111,14 +74,13 @@ function triggerImageDownloads() {
     }, i * 320);
   });
 }
-
 const dlBtn = document.getElementById('download-all-images');
-if (dlBtn) dlBtn.addEventListener('click', e => { e.preventDefault(); triggerImageDownloads(); });
+if (dlBtn) dlBtn.addEventListener('click', e => { e.preventDefault(); triggerDownloads(); });
 
-const footerDlBtn = document.getElementById('footer-download-images');
-if (footerDlBtn) footerDlBtn.addEventListener('click', e => { e.preventDefault(); triggerImageDownloads(); });
+const footerDl = document.getElementById('footer-download-images');
+if (footerDl) footerDl.addEventListener('click', e => { e.preventDefault(); triggerDownloads(); });
 
-// ── Form feedback via query string ──
+// ── Form feedback ──
 const params = new URLSearchParams(location.search);
 const result = document.getElementById('form-result');
 if (params.has('sent')) {
