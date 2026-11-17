@@ -80,6 +80,9 @@ if (dlBtn) dlBtn.addEventListener('click', e => { e.preventDefault(); triggerDow
 const footerDl = document.getElementById('footer-download-images');
 if (footerDl) footerDl.addEventListener('click', e => { e.preventDefault(); triggerDownloads(); });
 
+const navDl = document.getElementById('nav-dl-images');
+if (navDl) navDl.addEventListener('click', e => { e.preventDefault(); nav.classList.remove('open'); menu.textContent = '☰'; triggerDownloads(); });
+
 // ── Form feedback ──
 const params = new URLSearchParams(location.search);
 const result = document.getElementById('form-result');
