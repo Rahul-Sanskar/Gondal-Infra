@@ -92,7 +92,7 @@ if (params.has('sent')) {
   result.scrollIntoView({ behavior: 'smooth', block: 'center' });
   history.replaceState({}, '', location.pathname + '#enquire');
 } else if (params.has('error')) {
-  result.textContent = 'We could not submit your enquiry. Please try again or email us at sales@gonndalinfra.com';
+  result.textContent = 'We could not submit your enquiry. Please try again or email us at sales@gondalinfra.com';
   result.style.color = '#b03030';
   history.replaceState({}, '', location.pathname + '#enquire');
 }

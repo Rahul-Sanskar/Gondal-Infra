@@ -29,7 +29,7 @@ if (session_status() === PHP_SESSION_NONE) {
 /* -------------------------------------------------------------------------- *
  *  CONFIG — edit these values for Hostinger / Gondal Infra
  * -------------------------------------------------------------------------- */
-$recipient         = 'sales@gonndalinfra.com'; // Who receives enquiries
+$recipient         = 'sales@gondalinfra.com'; // Who receives enquiries
 
 // Hostinger Titan Mail / Hostinger Email SMTP — fill in from hPanel → Emails → Connection Settings
 $smtp = [
