@@ -28,6 +28,3 @@ composer.lock
 .phpunit.result.cache
 .php-cs-fixer.cache
 
-# Large assets — deploy these directly to the server, not via Git
-assets/*.pdf
-assets/*.PDF
